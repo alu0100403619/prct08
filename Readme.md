@@ -1,7 +1,7 @@
 Continous Testing Point
 ============================
 
-Desarrollo Dirigido por Pruebas para la clase Punto usando Comparable
+Desarrollo Dirigido por Pruebas para la clase Matriz
 
   * Ejemplos con distintas decripciones y espectativas 
   * Ejemplo de fichero 'Gemfile'
