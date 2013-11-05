@@ -2,19 +2,21 @@ require 'Matriz.rb'
 
 describe Matriz do
 	before :each do
-		#1 2 3 4
 		arr1 = [[1, 2], [3, 4]]
-		arr2 = [[1, 2], [3, 4]]
+		arr2 = [[5, 6], [7, 8]]
+		#1 2 3 4
 		@mat1 = Matriz.new(2, 2) #Matriz 1
-		@mat1.copy!(arr1) #Leemos los datos de la matriz 1
+		@mat1.copy!(arr1)
 		#5 6 7 8
 		@mat2 = Matriz.new(2, 2) #Matriz 2
-		@mat2.copy(arr2) #Leemos los datos de la matriz 2
+		@mat2.copy!(arr2)
 	end
 	
 	describe "# Tamanyo de la matriz " do
 		it "Debe existir un numero de filas" do
 			@mat1._fil.should eq(2)
+			puts "Mat1"
+			puts "#{@mat1}"
 		end
 		it "Debe existir un numero de columnas" do
 			@mat1._fil.should eq(2)
