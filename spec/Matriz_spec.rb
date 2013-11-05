@@ -3,10 +3,10 @@ require 'Matriz.rb'
 describe Matriz do
 	before :each do
 		#1 2 3 4
-		@mat1 = Matriz.new (2, 2) #Matriz 1
+		@mat1 = Matriz.new(2, 2) #Matriz 1
 		@mat1.read() #Leemos los datos de la matriz 1
 		#5 6 7 8
-		@mat2 = Matriz.new (2, 2) #Matriz 2
+		@mat2 = Matriz.new(2, 2) #Matriz 2
 		@mat2.read() #Leemos los datos de la matriz 2
 	end
 	
