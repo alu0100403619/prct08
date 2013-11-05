@@ -37,7 +37,7 @@ class Matriz
 	def +(other)
 		sum = Matriz.new(@_fil, @_col)
 
-		for i in (0...@_fil)					
+		for i in (0...@_fil)
 			for j in (0...@_col)
 				sum._Matriz[i][j] = (@_Matriz[i][j] + other._Matriz[i][j])
 			end			
