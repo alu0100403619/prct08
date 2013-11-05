@@ -3,14 +3,16 @@ require 'Matriz.rb'
 describe Matriz do
 	before :each do
 		#1 2 3 4
+		arr1 = [[1, 2], [3, 4]]
+		arr2 = [[1, 2], [3, 4]]
 		@mat1 = Matriz.new(2, 2) #Matriz 1
-		@mat1.read() #Leemos los datos de la matriz 1
+		@mat1.copy!(arr1) #Leemos los datos de la matriz 1
 		#5 6 7 8
 		@mat2 = Matriz.new(2, 2) #Matriz 2
-		@mat2.read() #Leemos los datos de la matriz 2
+		@mat2.copy(arr2) #Leemos los datos de la matriz 2
 	end
 	
-	describe "# Tamaño de la matriz " do
+	describe "# Tamanyo de la matriz " do
 		it "Debe existir un numero de filas" do
 			@mat1._fil.should eq(2)
 		end
@@ -19,7 +21,7 @@ describe Matriz do
 		end
 	end
 	
-	describe "# Comprobando que la matriz no está vacia" do
+	describe "# Comprobando que la matriz no esta vacia" do
 		it "La matriz debe contener datos" do
 			@mat1.to_s.should eq("1 2 \n3 4 ")
 		end

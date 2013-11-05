@@ -14,6 +14,16 @@ class Matriz
 		end
 	end
 	#-------------------------------------------------------------------
+	def copy!(other)
+		@fils = other.length
+		@cols = other[0].length
+		for i in (0...@_fil)
+			for j in (0...@_col)
+				@_Matriz[i][j] = other.Matriz[i][j]
+			end
+		end
+	end
+	#-------------------------------------------------------------------
 	def read()
 		for i in (0...@_fil)		
 			for j in (0...@_col)
