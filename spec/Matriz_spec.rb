@@ -23,9 +23,8 @@ describe Matriz do
 	
 	describe "# Comprobando que la matriz no esta vacia" do
 		it "La matriz debe contener datos" do
-			puts "Copiando Array en Matriz"
 			@mat1.copy!(@arr1)
-			@mat1.to_s.should eq("1 2 \n3 4 ")
+			@mat1.to_s.should eq("1  2  \n3  4  \n")
 		end
 	end
 	
@@ -34,7 +33,7 @@ describe Matriz do
 			@mat1.copy!(@arr1)
 			@mat2.copy!(@arr2)
 			sum = (@mat1 + @mat2)
-			sum.to_s.should eq("6 8 \n10 12 ")
+			sum.to_s.should eq("6  8  \n10  12  \n")
 		end
 	end
 	
@@ -43,7 +42,7 @@ describe Matriz do
 			@mat1.copy!(@arr1)
 			@mat2.copy!(@arr2)
 			mult = (@mat1 * @mat2)
-			mult.to_s.should eq("19 22 \n43 50 ")
+			mult.to_s.should eq("19  22  \n43  50  \n")
 		end
 	end
 	

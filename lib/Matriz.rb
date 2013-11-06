@@ -29,12 +29,10 @@ class Matriz
 	def copy!(other)
 		@_fil = other.length
 		@_col = other[0].length
-		for i in (0...@fil)
+		for i in (0...other.length)
 			#arr = other[i]
-			for j in (0...@col)
-				#@_Matriz[i][j] = arr[j]
+			for j in (0...other[i].length)
 				@_Matriz[i][j] = other[i][j]
-				puts "Mat[#{i}][#{j}]: #{other[i][j]}"
 			end #for j
 		end #for i
 	end
