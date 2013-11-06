@@ -1,9 +1,7 @@
 Continous Testing Point
 ============================
 
-Grupo:
-Jorge O. Blanchard Cruz
-Gonzalo J. García Martín
+Grupo: Jorge O. Blanchard Cruz y Gonzalo J. García Martín
 
 Desarrollo Dirigido por Pruebas para la clase Matriz
 
