@@ -11,8 +11,7 @@ class Matriz
 		
 		for i in (0...@_fil)
 			@_Matriz[i] = Array.new()
-		end
-		
+		end	
 	end
 	#-------------------------------------------------------------------
 	def read()
@@ -75,6 +74,7 @@ class Matriz
 			end #for j
 
 		end #for i
+		
 		mult
 	end
 	#-------------------------------------------------------------------
