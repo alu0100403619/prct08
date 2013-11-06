@@ -1,6 +1,10 @@
 Continous Testing Point
 ============================
 
+Grupo:
+Jorge O. Blanchard Cruz
+Gonzalo J. García Martín
+
 Desarrollo Dirigido por Pruebas para la clase Matriz
 
   * Ejemplos con distintas decripciones y espectativas 
