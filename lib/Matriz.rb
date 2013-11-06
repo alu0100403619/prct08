@@ -16,7 +16,7 @@ class Matriz
 	end
 	#-------------------------------------------------------------------
 	def read()
-		for i in (0...@_fil)		
+		for i in (0...@_fil)
 			for j in (0...@_col)
 				print "mat[#{i}][#{j}]: "
 				value = gets
@@ -29,21 +29,25 @@ class Matriz
 	def copy!(other)
 		@_fil = other.length
 		@_col = other[0].length
-		for i in (0...other.length)
-			arr = other[i]
-			for j in (0...arr.length)
-				@_Matriz[i][j] = arr[j]
+		for i in (0...@fil)
+			#arr = other[i]
+			for j in (0...@col)
+				#@_Matriz[i][j] = arr[j]
+				@_Matriz[i][j] = other[i][j]
+				puts "Mat[#{i}][#{j}]: #{other[i][j]}"
 			end #for j
 		end #for i
 	end
 	#-------------------------------------------------------------------
 	def to_s()
+		cad = ""
 		for i in (0...@_fil)
 			for j in (0...@_col)
-				print "#{@_Matriz[i][j]}  "
+				cad << "#{@_Matriz[i][j]}  "
 			end
-			puts ""
+			cad << "\n"
 		end
+		cad
 	end
 	#-------------------------------------------------------------------
 	def +(other)
