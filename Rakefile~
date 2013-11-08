@@ -19,7 +19,7 @@ end
 
 desc "Run /lib/main.rb"
 task :bin do
-  sh "rspec lib/main.rb"
+  sh "rspec -I. lib/main.rb"
 end
 
 desc "Ejecutar test con --format: html"
