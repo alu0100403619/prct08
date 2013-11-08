@@ -67,7 +67,7 @@ class Matriz
 		for i in (0...@_fil)
 			for j in (0...other._col)
 			
-				aux = 0
+				aux = Fraccion.new(0,1)
 				for k in (0...other._fil)
 					aux += (@_Matriz[i][k] * other._Matriz[k][j])
 				end #for 

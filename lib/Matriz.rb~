@@ -1,3 +1,5 @@
+require 'fraccion.rb'
+
 
 class Matriz
 

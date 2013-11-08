@@ -25,7 +25,7 @@ describe Matriz do
 	describe "# Comprobando que la matriz no esta vacia" do
 		it "La matriz debe contener datos" do
 			@mat1.copy!(@arr1)
-			@mat1.to_s.should eq("1  2  \n3  4  \n")
+			@mat1.to_s.should eq("1/2  1/3  \n1/4  1/5  \n")
 		end
 	end
 	

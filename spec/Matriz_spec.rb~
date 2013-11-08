@@ -43,7 +43,7 @@ describe Matriz do
 			@mat1.copy!(@arr1)
 			@mat2.copy!(@arr2)
 			mult = (@mat1 * @mat2)
-			mult.to_s.should eq("19  22  \n43  50  \n")
+			mult.to_s.should eq("1/2  3/5  \n11/40  49/150  \n")
 		end
 	end
 	

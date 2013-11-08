@@ -17,7 +17,11 @@ class Fraccion
   end
   
   def to_s #mostrar por pantalla
-    "#{@num}/#{@den}"
+    if (@den == 1)
+      "#{@num}"
+    else
+      "#{@num}/#{@den}"
+    end
   end
   
   def to_f #convertir a float
