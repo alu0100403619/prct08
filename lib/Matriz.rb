@@ -80,5 +80,18 @@ class Matriz
 		mult
 	end
 	#-------------------------------------------------------------------
+	def ==(other)
+		raise TypeError, "Solo se pueden comparar matrices" unless other.is_a?Matriz
+		raise RangeError, "Las filas deben ser iguales" unless @_fil == other._fil
+		raise RangeError, "Las columnas deben ser iguales" unless @_col == other._col
+		iguales = true
+		for i in (0...@_fil)
+			for j in (0...@_col)
+				if (@_Matriz[i][j] != other._Matriz[i][j])
+					iguales = false
+				end #if
+			end #for j
+		end #for i
+	end
+	#-------------------------------------------------------------------
 end
-
