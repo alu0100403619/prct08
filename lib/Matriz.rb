@@ -92,6 +92,7 @@ class Matriz
 				end #if
 			end #for j
 		end #for i
+		iguales
 	end
 	#-------------------------------------------------------------------
 end

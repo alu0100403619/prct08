@@ -97,4 +97,8 @@ class Fraccion
     (@num/@den) <=> (other.num/other.den)
   end
   
+  def coerce(other)
+	  [self, Fraccion.new(other, 1)]
+  end
+  
 end

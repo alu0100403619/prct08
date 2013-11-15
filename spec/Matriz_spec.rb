@@ -7,6 +7,9 @@ describe Matriz do
 		@arr2 = [[Fraccion.new(1,2), Fraccion.new(2,3)], [Fraccion.new(3,4), Fraccion.new(4,5)]]
 		@arr3 = [[Fraccion.new(1,1), Fraccion.new(1,1)], [Fraccion.new(1,1), Fraccion.new(1,1)]]
  		@arr4 = [[Fraccion.new(1,2), Fraccion.new(3,5)], [Fraccion.new(11,40), Fraccion.new(49,150)]]
+		@arr5 = [[Fraccion.new(1,2), Fraccion.new(0,1)], [Fraccion.new(0,1), Fraccion.new(0,1)]]
+		@arr6 = [[1, 1], [1, 1]]
+		@arr7 = [[Fraccion.new(3,2), Fraccion.new(1,1)], [Fraccion.new(1,1), Fraccion.new(1,1)]]
 		#1 2 3 4
 		@mat1 = Matriz.new(2, 2) #Matriz 1
 		#@mat1.copy!(@arr1)
@@ -15,6 +18,8 @@ describe Matriz do
 		#@mat2.copy!(@arr2)
 		@result_sum = Matriz.new(2, 2)
 		@result_mult = Matriz.new(2, 2)
+		@matUnit = Matriz.new(2, 2) #Array de enteros
+		@matPrb = Matriz.new(2, 2)
 	end
 	
 	describe "# Tamanyo de la matriz " do
@@ -55,5 +60,17 @@ describe Matriz do
 			mult.should == @result_mult
 		end
 	end
+	
+	describe "# Jugando con el metodo coerce" do
+		it "Se debe poder sumar una matriz de enteros con una de fracciones" do
+			@matUnit.copy!(@arr6)
+			@matPrb.copy!(@arr5)
+			result = Matriz.new(2, 2)
+			result.copy!(@arr7)
+			#puts "#{result}"
+			(@matUnit + @matPrb).should == result
+		end
+	end
+	
 	
 end
